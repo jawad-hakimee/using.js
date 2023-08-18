@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numbers = {
+            price: 2000,
+            dicount: 20/100,
+            handleDicount: function(){
+                return numbers.price * numbers.dicount
+            }
+        }
+        console.log("Price = ",numbers.price);
+        var finalDicount = numbers.handleDicount()
+        console.log("Dicount = ",finalDicount);
+        var finalPrice = numbers.price - finalDicount
+        console.log("final Price = ",finalPrice);
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

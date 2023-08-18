@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var sum = {
+        //     Name: "Jawad",
+        //     LastName: "Hakimi",
+        //     age: 19,
+        //     Learn: "Frontend Web Devloper"
+        // }
+
+        function sum(Name,LastName,age,Learn) {
+            this.Name = Name
+            this.LastName = LastName
+            this.age = age
+            this.Learn = Learn
+            this.FullNameMaker = function(){
+                console.log(this.Name+this.LastName);
+            }
+            
+        }
+        sum.prototype.Brand = "Red"
+
+        var ali = new sum("ali","Koko",20,"Python")
+       ali.eyecolor = "Black"
+        
+        var akli = new sum("Maryam","Rahimi",30,"Java")
+        akli.hairColor = "Gray"
+        console.log(akli)
+        console.log(ali);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

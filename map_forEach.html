@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = ["ail ", 333, "mohammd", 4]
+
+
+        for (var i = 0; i < array.length; i++) {
+            console.log(array[i])
+        }
+
+        array.forEach(function(value, index,array){
+            console.log(index)
+            console.log(value)
+            console.log(array)
+
+        })
+        // the for doesn't hvae the return but map hvae the return 
+        ////////////////////////////////////////////////////////////////////////
+
+
+        var i = array.map(function (value, index, array) {
+            // console.log(value)
+            // console.log( index);
+            // console.log(array);;
+            return value
+        })
+console.log(i);
+
+
+        // function jawad(){
+        // return "how are you"
+        // }
+        // var x = jawad()
+        // console.log(x);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

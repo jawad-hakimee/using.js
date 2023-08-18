@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         // this show the true and false of and array with it condition compare with all 
+        var array = [89, 23, 23, 88, 19]
+        var io = array.every(function (value, index, array) {
+            return value > 18
+           
+        })
+        console.log(io);
+
+        // compare and if one of them was correct it return true
+        var array = [9, 2, 3, 8, 19]
+        var io = array.some(function (value, index, array) {
+            return value > 18
+           
+        })
+        console.log(io);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
